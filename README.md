@@ -1,25 +1,8 @@
-# Ember-cli-threejs
+# Ember + Three JS
 
-This README outlines the details of collaborating on this Ember addon.
+With this addon, you will be able to show your Ember models in 3D space.
 
-## Installation
-
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+There are three levels, each represented by a Component class:
+* Three-scene: the main scene, renderer, camera and pan/zoom controls
+* Three-layer: contains bodies of one type of model, defines look and feel of its models
+* Three-body: links to one model, listens to changes and triggers actions
